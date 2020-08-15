@@ -1,0 +1,14 @@
+.contenedor {
+	display: grid;
+	grid-gap: 20px;	
+	/*minmax(tamaño minimo, tamaño maximo)*/
+	/*en este caso la primera grilla o celda va a tner una minimo de 300px y un maximo de una fraccion(1fr)*/
+	grid-template-columns: minmax(300px, 1fr) 1fr;
+	
+	/*
+		en el caso de las filas se suele usar como minimo un valor y como maximo de forma automatica,
+		asi esto va a depender del tamaño del contenido que se tenga
+		minmax(150px, auto)
+	*/
+	grid-template-rows: minmax(150px, auto) 400px;
+}

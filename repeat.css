@@ -1,0 +1,12 @@
+.contenedor {
+	display: grid;
+	grid-gap: 20px;
+	
+	/*
+		repeat(cantidad a repetir, tamaño)
+	*/
+	/*En este caso la primera va a tener 200px, y luego va a tener 6 de una fraccion*/
+	grid-template-columns: 200px repeat(6, 1fr);
+
+	grid-template-rows: repeat(3, 1fr);
+}

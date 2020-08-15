@@ -1,0 +1,9 @@
+.contenedor {
+    display: grid;
+    /*Definimos el tamaño de las columnas*/
+    grid-template-columns: 200px 1fr 1fr;
+    /*Definimos el tamaño de las filas*/
+    grid-template-rows: 150px 300px;
+    /*Definimos el espacio entre cada celda o grilla*/
+    grid-gap: 20px;
+}
