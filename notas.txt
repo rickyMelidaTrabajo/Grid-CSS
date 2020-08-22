@@ -1,0 +1,77 @@
+/*Dentro del contenedor */
+Para poder empezar el css grid,primeramente le decimos que actie la grilla,
+y essto lo hace con display: grid, y esto en el contenedor.
+
+grid-gap 
+    seria para especificar el espaciado entre todas las grillas existentes
+
+grid-templates-columns 
+    Especifica la cantidad de columnas que va a tener el contenedor
+
+grid-templates-rows
+    Especifica la cantidad de filas que va a tener el contenedor.
+
+grid-repeat
+    Funcion que lleva dos parametros repeat(cantidadd de grillas, tamaño de grillas)
+    La cantidad de grillas se refiere a cuantas grillas va a tener, ya sea una fila o 
+    una columna, y el tamaño seria el ancho o alto que va a tener la grilla, normalmente
+    se suele usar la unidad de medida fr(fraccion) que dependiendo del la cantidad, abarca
+    toda una fraccion.
+
+
+/*Para los item  */
+
+grid-column-start
+    Con esto le especificamos la columna donde queremos que empiece la grilla en específico
+grid-column-end
+    Con esto le especificamos la columna donde queremos que termine la grilla en específico
+
+grid-column
+    Este es la abreviacion de ambos elementos, es decir con esto seleccinamos el 
+    inicio y fin de nuestro item en especifico, por ejemplo:
+    
+    grid-column: 1 / 4;
+    
+    Con el ejemplo de arriba lo que le decimos es que no inicie en la columna 1 y 
+    nos termine en la columna 4, seria como decir:
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+
+
+grid-row-start
+    Con esto le especificamos la fila donde queremos que empiece la grilla en específico
+grid-row-end
+    Con esto le especificamos la fila donde queremos que termine la grilla en específico
+    
+grid-row
+    Este es la abreviacion de ambos elementos, es decir con esto seleccinamos el 
+    inicio y fin de nuestro item en especifico, por ejemplo:
+    
+    grid-row: 1 / 3;
+    
+    Con el ejemplo de arriba lo que le decimos es que no inicie en la fila 1 y 
+    nos termine en la fila 3, seria como decir:
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+grid-area
+    Con esto le indicamos el inicio y fin tanto de las columnas como de las 
+    filas, y esto en el siguiente orden:
+
+    primer-parametro: grid-row-start
+    segundo-parametro: grid-column-start
+    tercer-parametro: grid-row-end
+    cuarto-parametro: grid-column-end
+
+
+span
+    Con span le indicamos cuantas filas o columnas se va a extender nuestro grilla o
+    item, por ejemplo:
+
+    grid-column: 2 / span 2;
+
+    con esto le decimos que va a iniciar en la columna 2 y se va a extender 2 columnas
+    mas, es decir que va a llegar hasta la columna 4.
+    Esto tambien se aplica a las filas:
+    grid-row: 2 / span 2;
