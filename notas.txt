@@ -75,3 +75,35 @@ span
     mas, es decir que va a llegar hasta la columna 4.
     Esto tambien se aplica a las filas:
     grid-row: 2 / span 2;
+
+grid-areas
+    Podemos definir un area determinada para poder asignar un seccion especifica,
+    por ejemplo:
+    
+    grid-template-areas: "header header header";
+    
+    En el codigo de arriba lo que le estamos diciendo es que header va a agarrar tres
+    columnas.
+
+    Ahora podemos asignarle una grilla en especifico a esta area en particular que hemos
+    asignado dentro del contenedor, y esto lo hacemos dentro del elemento(o grilla) que 
+    queremos que se asigne a esa area, seria algo asi:
+    
+    grid-column-start: header;
+    grid-column-end: header;
+
+    Con este ultimo le indicamos que el elemento(o grilla) va iniciar y terminar en toda
+    el area que nosotros asignamos como header.
+
+    Para poder definir una nueva fila con el grid-area, lo podemos hacer agregando nuevos 
+    nombres para la siguiente fila y columnas
+
+    grid-template-areas: "header header header"
+                         "sidebar1 contenido sidebar2";
+
+    Con el codigo de arriba lo que le estamos diciendo es lo siguiente:
+    En la primera fila va a tener tres columnas y cada una se va a llamar header,
+    luego en la segunda fila tambien va a tener tres columnas pero la primera 
+    se va a llamar sidebar1, la segunda contenido y la tercera sidebar2.
+    Para un mejor orden es recomendable colocar cada seccion de fila, una debajo
+    de otra, asi se evita confusion.
