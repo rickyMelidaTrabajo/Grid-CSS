@@ -107,3 +107,17 @@ grid-areas
     se va a llamar sidebar1, la segunda contenido y la tercera sidebar2.
     Para un mejor orden es recomendable colocar cada seccion de fila, una debajo
     de otra, asi se evita confusion.
+
+Alineación de Tracks
+    Podemos alinear los track o elementos dentro del contenedor en si mismo
+    y esto lo hacemos con justify-content que alinea de forma horizontal y align-content
+    que nos alinea de forma vertical y los valores que pueden tener son:
+    -normal: posicion por defecto
+    -start:  es parecido al normal.
+    -center: este centra todas las grillas en el contenedor.
+    -space-around: este deja espacios entre las diferentes filas o columnas.
+    -space-between: este deja espacios entre las diferentes filas o columnas, 
+    la diferencia entre space-around es no deja espacios en los extremos.
+    -space-evenly : este deja espacios entre las diferentes filas o columnas, solo
+    que a diferencia de space-around y space-between este deja espacios iguales
+    entre las diferentes filas o columnas.
