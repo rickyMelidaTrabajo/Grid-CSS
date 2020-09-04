@@ -107,3 +107,22 @@ grid-areas
     se va a llamar sidebar1, la segunda contenido y la tercera sidebar2.
     Para un mejor orden es recomendable colocar cada seccion de fila, una debajo
     de otra, asi se evita confusion.
+
+
+Alineando elementos
+    Podemos hacer que nuestros elementos o grillas abarquen solo lo necesario,
+    es decir que solo tenga el ancho y alto necesario de acuerdo al contenido, 
+    y esto lo hacemos con justify-items que alinea de forma horizontal y 
+    align-items que alinea de forma vertical, ambas declaraciones van dentro 
+    de lo que seria el contenedor.
+    Los valores que puede tomar son :
+        -auto : que posiciona de forma automatica.
+        -stretch : lo ajusta a todo el ancho o largo.
+        -start: posiciona al inicio y solo lo necesario.
+        -center: posiciona al centro del elemento o  grilla
+        -end: posiciona los elementos hacia la derecha.
+    
+    Tambien podemos alinear un elemento en especifico y esto lo  hacemos con lo 
+    que seria justify-self que alinea horizontalmente y align-self que alinea 
+    verticalmente, ambas declaraciones van dentro del elemento o grilla que queremos
+    alinear.
