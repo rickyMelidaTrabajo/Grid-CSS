@@ -107,3 +107,17 @@ grid-areas
     se va a llamar sidebar1, la segunda contenido y la tercera sidebar2.
     Para un mejor orden es recomendable colocar cada seccion de fila, una debajo
     de otra, asi se evita confusion.
+
+Grid-implicitas
+    Si queremos definir un valor a las grid implicitas o grillas que no han sido
+    declaradas de forma explicita lo podemos hacer con grid-auto-rows, este para 
+    las filas; y grid-auto-columns para las columnas.
+
+    Exite un declaracion llamada grid-auto-flow, que lo que hace es cambiar el 
+    flujo de orden de las grillas, y esto lo definimos con: 
+    -column: para que el flujo sea de forma vertical
+    -row : para que el fujo sea de forma horizontal, la cual es la que viene por 
+    defecto.
+    -dense: este atributo lo que hace es que rellena los espacios en blanco 
+    asignanndo otras grillas a esas que estan vacias, de tal forma a que no 
+    quede ninguna en blanco
