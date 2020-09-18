@@ -108,16 +108,16 @@ grid-areas
     Para un mejor orden es recomendable colocar cada seccion de fila, una debajo
     de otra, asi se evita confusion.
 
-Alineación de Tracks
-    Podemos alinear los track o elementos dentro del contenedor en si mismo
-    y esto lo hacemos con justify-content que alinea de forma horizontal y align-content
-    que nos alinea de forma vertical y los valores que pueden tener son:
-    -normal: posicion por defecto
-    -start:  es parecido al normal.
-    -center: este centra todas las grillas en el contenedor.
-    -space-around: este deja espacios entre las diferentes filas o columnas.
-    -space-between: este deja espacios entre las diferentes filas o columnas, 
-    la diferencia entre space-around es no deja espacios en los extremos.
-    -space-evenly : este deja espacios entre las diferentes filas o columnas, solo
-    que a diferencia de space-around y space-between este deja espacios iguales
-    entre las diferentes filas o columnas.
+Grid-implicitas
+    Si queremos definir un valor a las grid implicitas o grillas que no han sido
+    declaradas de forma explicita lo podemos hacer con grid-auto-rows, este para 
+    las filas; y grid-auto-columns para las columnas.
+
+    Exite un declaracion llamada grid-auto-flow, que lo que hace es cambiar el 
+    flujo de orden de las grillas, y esto lo definimos con: 
+    -column: para que el flujo sea de forma vertical
+    -row : para que el fujo sea de forma horizontal, la cual es la que viene por 
+    defecto.
+    -dense: este atributo lo que hace es que rellena los espacios en blanco 
+    asignanndo otras grillas a esas que estan vacias, de tal forma a que no 
+    quede ninguna en blanco
