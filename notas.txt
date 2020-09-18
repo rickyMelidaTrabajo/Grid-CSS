@@ -121,3 +121,20 @@ Grid-implicitas
     -dense: este atributo lo que hace es que rellena los espacios en blanco 
     asignanndo otras grillas a esas que estan vacias, de tal forma a que no 
     quede ninguna en blanco
+
+
+    Auto-fill, auto-fit
+    Con auto-fill nosostros podemos hacer que las grillas se bajen una vez 
+    alcanzado su ancho minimo, y esto lo hacemos de la siguiente manera: 
+    
+        rid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    
+    En el codigo de arriba lo que le decimos es que repita la cantidad 
+    necesaria de columnas(auto-fill) y que tenga como el ancho minimo 
+    100px y como maximo 1fr.
+    Auto-fill va a rellenar toda nuestra fila con todas las columnas que
+    pueda poner dentro y va a crear columnas implicitas en cada caso de 
+    que quepan, y una vez que ya no caben los va a poner debajo.
+
+    Con auto-fit nos va permitir es rellenar todo el contenedor con las columnas 
+    que tenemos disponibles.
